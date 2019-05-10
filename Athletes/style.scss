@@ -15,17 +15,22 @@ body {
   margin-bottom: 40px;
   font-family: Arial;
   cursor: pointer;
-  
+  color: #2F4F4F;
+
   img {
     border-radius: 50%;
     width: $imageHeight;
     height: $imageHeight;
+    transition:1s linear;
+    &:hover {
+        border-radius: 60px;
+    }
   }
   
   .person {
-      display: block;
-      position: relative;
-  }
+    display: block;
+    position: relative;
+}
   
   span.rank {
    color: #8B0000;
@@ -35,8 +40,8 @@ body {
    background-color: white;
    border-radius: 50%;
    position: absolute;
-   right: 21px;
-   bottom: 91px;
+   left: 150px;
+   top: 84px;
    line-height: 32px;
   }
 
@@ -46,16 +51,15 @@ body {
     line-height: 23px;
     display: block;
     z-index: 1;
+    margin-bottom: 30px;
   }
   
   .person:hover {
     transform: scale(1.1);
     background-color: #eee;
     border-radius: 12px;
-    font-size: 24px;
-    line-height: 28px;
-    transition: all 1s linear;
     z-index: 1;
+    transition: all 1s linear;
   }
 }
 

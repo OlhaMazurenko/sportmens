@@ -11,11 +11,15 @@ body {
   text-align: center;
   margin-bottom: 40px;
   font-family: Arial;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #2F4F4F; }
   .people img {
     border-radius: 50%;
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    transition: 1s linear; }
+    .people img:hover {
+      border-radius: 60px; }
   .people .person {
     display: block;
     position: relative; }
@@ -27,22 +31,21 @@ body {
     background-color: white;
     border-radius: 50%;
     position: absolute;
-    right: 21px;
-    bottom: 91px;
+    left: 150px;
+    top: 84px;
     line-height: 32px; }
   .people .details > a {
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
     display: block;
-    z-index: 1; }
+    z-index: 1;
+    margin-bottom: 30px; }
   .people .person:hover {
     transform: scale(1.1);
     background-color: #eee;
     border-radius: 12px;
-    font-size: 24px;
-    line-height: 28px;
-    transition: all 1s linear;
-    z-index: 1; }
+    z-index: 1;
+    transition: all 1s linear; }
 
 /*# sourceMappingURL=style.css.map */
