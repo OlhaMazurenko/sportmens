@@ -29,11 +29,14 @@ body {
     border-radius: 50%;
     position: absolute;
     right: 21px;
-    bottom: 91px; }
+    bottom: 91px;
+    text-align: center; }
   .people .details > a {
     font-weight: bold;
     font-size: 20px;
-    line-height: 23px; }
+    line-height: 23px;
+    display: block;
+    z-index: 1; }
   .people .person:hover {
     width: 264px;
     height: 345px;
@@ -42,6 +45,7 @@ body {
     border-radius: 12px;
     font-size: 24px;
     line-height: 28px;
-    transition: all 1s linear; }
+    transition: all 1s linear;
+    z-index: 1; }
 
 /*# sourceMappingURL=style.css.map */

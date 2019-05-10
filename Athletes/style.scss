@@ -18,10 +18,9 @@ body {
   cursor: pointer;
   
   img {
-      border-radius: 50%;
-      width: $imageHeight;
-      height: $imageHeight;
-          
+    border-radius: 50%;
+    width: $imageHeight;
+    height: $imageHeight;
   }
   
   .person {
@@ -39,23 +38,26 @@ body {
    position: absolute;
    right: 21px;
    bottom: 91px;
-
+   text-align:  center;
   }
 
   .details > a {
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
+    display: block;
+    z-index: 1;
   }
   
   .person:hover {
-        width: 264px;
-        height: 345px;
-        transition: 1s;
-        background-color: #eee;
-        border-radius: 12px;
-        font-size: 24px;
-        line-height: 28px;
-        transition: all 1s linear
+    width: 264px;
+    height: 345px;
+    transition: 1s;
+    background-color: #eee;
+    border-radius: 12px;
+    font-size: 24px;
+    line-height: 28px;
+    transition: all 1s linear;
+    z-index: 1;
   }
 }
