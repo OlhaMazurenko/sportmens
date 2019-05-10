@@ -5,8 +5,7 @@ body {
 .people {
   padding: 30px;
   display: grid;
-  grid-template: repeat(4, 200px)/repeat(4, 200px);
-  height: 100vh;
+  grid-template: repeat(4, auto)/repeat(4, 200px);
   justify-content: center;
   grid-gap: 30px;
   text-align: center;
@@ -30,7 +29,7 @@ body {
     position: absolute;
     right: 21px;
     bottom: 91px;
-    text-align: center; }
+    line-height: 32px; }
   .people .details > a {
     font-weight: bold;
     font-size: 20px;
@@ -38,9 +37,7 @@ body {
     display: block;
     z-index: 1; }
   .people .person:hover {
-    width: 264px;
-    height: 345px;
-    transition: 1s;
+    transform: scale(1.1);
     background-color: #eee;
     border-radius: 12px;
     font-size: 24px;
