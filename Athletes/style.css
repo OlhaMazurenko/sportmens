@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial; }
+
+.people {
+  padding: 30px;
+  display: grid;
+  grid-template: repeat(4, 200px)/repeat(4, 200px);
+  height: 100vh;
+  justify-content: center;
+  grid-gap: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: Arial;
+  cursor: pointer; }
+  .people img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; }
+  .people .person {
+    display: block;
+    position: relative; }
+  .people span.rank {
+    color: #8B0000;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 21px;
+    bottom: 91px; }
+  .people .details > a {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px; }
+  .people .person:hover {
+    width: 264px;
+    height: 345px;
+    transition: 1s;
+    background-color: #eee;
+    border-radius: 12px;
+    font-size: 24px;
+    line-height: 28px;
+    transition: all 1s linear; }
+
+/*# sourceMappingURL=style.css.map */
