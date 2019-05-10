@@ -1,5 +1,8 @@
 $imageHeight: 200px;
 
+* {
+  box-sizing: border-box;
+}
 body {
     margin: 0;
     font-family: Arial;
@@ -17,6 +20,7 @@ body {
   cursor: pointer;
   color: #2F4F4F;
 
+
   img {
     border-radius: 50%;
     width: $imageHeight;
@@ -24,14 +28,28 @@ body {
     transition:1s linear;
     &:hover {
         border-radius: 60px;
+        padding: 10px;
     }
   }
   
   .person {
-    display: block;
-    position: relative;
-}
-  
+      display: block;
+      position: relative;
+      &:hover {
+        transform: scale(1.1);
+        background-color: #eee;
+        border-radius: 12px;
+        z-index: 1;
+        transition: all 1s linear;
+         .extra {
+          display: block;
+          margin-bottom: 16px;
+          font-size: 18px;
+        }
+      }
+    }
+    
+
   span.rank {
    color: #8B0000;
    display: block;
@@ -45,24 +63,25 @@ body {
    line-height: 32px;
   }
 
-  .details > a {
+  .details {
+  > .extra {
+    display: none;
+    margin-top: 9px;
+  }
+  > a {
     font-weight: bold;
     font-size: 20px;
     line-height: 23px;
     display: block;
     z-index: 1;
-    margin-bottom: 30px;
+    margin-top: 8px;
+   }
   }
-  
-  .person:hover {
-    transform: scale(1.1);
-    background-color: #eee;
-    border-radius: 12px;
-    z-index: 1;
-    transition: all 1s linear;
-  }
+   
 }
 
 @media (max-width: 750px) {
-
+  .people {
+    grid-template:repeat(5,auto)/repeat(2, 200px);
+  }
 }
