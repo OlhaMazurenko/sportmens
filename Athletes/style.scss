@@ -3,6 +3,7 @@ $imageHeight: 200px;
 * {
   box-sizing: border-box;
 }
+
 body {
     margin: 0;
     font-family: Arial;
@@ -11,7 +12,8 @@ body {
 .people {
   padding: 30px;
   display: grid;
-  grid-template:repeat(4,auto)/repeat(4, 200px);
+  grid-template-columns: repeat(4, auto);
+  grid-auto-rows: 235px; 
   justify-content: center;
   grid-gap: 30px;
   text-align: center;
@@ -19,8 +21,7 @@ body {
   font-family: Arial;
   cursor: pointer;
   color: #2F4F4F;
-
-
+ 
   img {
     border-radius: 50%;
     width: $imageHeight;
@@ -35,13 +36,15 @@ body {
   .person {
       display: block;
       position: relative;
+      
       &:hover {
         transform: scale(1.1);
         background-color: #eee;
         border-radius: 12px;
         z-index: 1;
         transition: all 1s linear;
-         .extra {
+        min-height: 280px;
+          .extra {
           display: block;
           margin-bottom: 16px;
           font-size: 18px;
